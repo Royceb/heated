@@ -1,0 +1,23 @@
+<div class="form-container" id="toolbar">
+    <header [@fallIn]="state">
+      <button (click)="logout()" class="basic-btn">Logout</button>
+    </header>
+    <div id="page" [@moveInLeft]="state">
+      <h2>Hey {{ name.auth.displayName }}!</h2>
+      <div>
+      	<p>Start a trade</p>
+      	<p>Trade:</p><input type="" name="">
+      	<p>For:</p><input type="" name="">
+      	<p><button type="submit">trade</button></p>
+      </div>
+      <div>
+      	<p>Active Trades</p>
+		<ul>
+		  <li class="text" *ngFor="let item of items | async">
+		    {{item.$value}}
+		  </li>
+		</ul>
+      </div>
+
+    </div>
+</div>	
