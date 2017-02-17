@@ -3,8 +3,8 @@ import { AngularFire, AuthProviders, AuthMethods, FirebaseListObservable } from 
 import { Router } from '@angular/router';
 import { moveIn, fallIn, moveInLeft } from '../router.animations';
 
-declare var stepForm: any;
-declare var classie: any;
+declare var stepsForm:any;
+declare var classie:any;
 
 @Component({
   selector: 'app-members',
@@ -36,7 +36,7 @@ export class MembersComponent implements OnInit {
 
   ngOnInit() {
       var theForm = document.getElementById( 'theForm' );
-      new stepForm( theForm, {
+      new stepsForm( theForm, {
         onSubmit : function( form ) {
           // hide form
           classie.addClass( theForm.querySelector( '.simform-inner' ), 'hide' );
