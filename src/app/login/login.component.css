@@ -18,7 +18,7 @@
 }
 
 #email {
-    background: #ECECEC  url('assets/images/email.svg') no-repeat 25px;
+    background: #FFF  url('assets/images/email.svg') no-repeat 25px;
     background-size: 25px;
 }
 @media (max-width: 600px) {
@@ -27,7 +27,6 @@
     }
     #toolbar {
         width:90%;
-        margin-left: -45%;
     }
     #fb {
         background:#3B5998;
