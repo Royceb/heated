@@ -1,0 +1,81 @@
+@import "../../../../styles/_var";
+
+:host {
+  display: block;
+  background: #fff url('/assets/img/backgrounds/3.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.login {
+  background: white;
+  width: 380px;
+
+  button {
+    padding:1.2em;
+    width:100%;
+    cursor:pointer;
+    margin-bottom:15px;
+    font-size:1.3em;
+  }
+
+  #fb {
+      background:#3B5998 url('/assets/img/facebook.svg') no-repeat 14px 6px;
+      background-size: 47px;
+      color:#fff;
+  }
+  #twitter {
+      border: 1px solid #fff;
+      background: #00aced  url('/assets/img/twitter.svg') no-repeat 25px;
+      background-size: 25px;
+      color:white;
+  }
+  #email {
+      background: #FFF  url('/assets/img/email.svg') no-repeat 25px;
+      background-size: 25px;
+  }
+
+  .alc {
+    text-align:center;
+    display:block;
+    margin: 15px 0;
+  }
+  
+  .login-header {
+    background: $background-color__sidenav-list;
+    padding: 24px;
+  }
+
+  .login-content {
+    padding: 24px 42px 42px;
+
+    md-input-container {
+      width: 100%;
+      margin: 6px 0;
+    }
+
+    .extra-options {
+      margin: 16px 0 32px;
+
+      .remember-me {
+        color: #777;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: #2196F3;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .note {
+      color: #777;
+      margin: 24px 0 0;
+      text-align: center;
+    }
+  }
+}

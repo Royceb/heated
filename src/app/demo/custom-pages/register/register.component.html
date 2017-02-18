@@ -1,0 +1,35 @@
+
+    <span class="error" *ngIf="error" [@fallIn]='state'>{{ error }}</span>
+    <form #formData='ngForm' (ngSubmit)="onSubmit(formData)" id="theForm" class="simform" autocomplete="off">
+      <div class="simform-inner">
+        <ol class="questions">
+          <li>
+            <span><label for="q1">Enter your email</label></span>
+            <input id="q1" name="q1" type="text" placeholder="Email address.." (ngModel)="email" name="email" class="txt" required/>
+          </li>
+          <li>
+            <span><label for="q2">Password</label></span>
+ <!--            <input id="q2" name="q2" type="password" placeholder="Password" (ngModel)="password" name="password" class="txt" required/> -->
+            <input type="password" placeholder="Password" (ngModel)="password" name="password" class="txt" required>
+
+          </li>
+<!--           <li>
+            <span><label for="q3">Confirm Password</label></span>
+            <input id="q3" name="q3" type="password" placeholder="Password" (ngModel)="password" name="password" class="txt" required/>
+          </li> -->
+        </ol><!-- /questions -->
+        <button type="submit" [disabled]="!formData.valid" class="basic-btn onSubmit">Sign up</button>
+
+        <!-- <button class="submit" type="submit">Send answers</button> -->
+        <div class="controls">
+          <button class="next"></button>
+          <div class="progress"></div>
+          <span class="number">
+            <span class="number-current"></span>
+            <span class="number-total"></span>
+          </span>
+          <span class="error-message"></span>
+        </div><!-- / controls -->
+      </div><!-- /simform-inner -->
+      <span class="final-message"></span>
+    </form><!-- /simform -->   

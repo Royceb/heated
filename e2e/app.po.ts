@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class MyauthappPage {
+export class FuryPage {
   navigateTo() {
     return browser.get('/');
   }

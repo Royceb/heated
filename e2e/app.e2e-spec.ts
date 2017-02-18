@@ -1,10 +1,10 @@
-import { MyauthappPage } from './app.po';
+import { FuryPage } from './app.po';
 
-describe('myauthapp App', function() {
-  let page: MyauthappPage;
+describe('fury App', function() {
+  let page: FuryPage;
 
   beforeEach(() => {
-    page = new MyauthappPage();
+    page = new FuryPage();
   });
 
   it('should display message saying app works', () => {
